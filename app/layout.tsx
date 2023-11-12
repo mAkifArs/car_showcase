@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import { Navbar, Footer } from '@/components'
+import { NavBar, Footer } from '@/components'
+
 export const metadata: Metadata = {
   title: 'Car Hub',
   description: 'Discover the best cass in the world',
@@ -14,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="relative">
-        <Navbar />
+        <NavBar />
         {children}
         <Footer />
       </body>
